@@ -1,4 +1,4 @@
-type renderProps = {@as("open") open_: bool, disabled: bool}
+type renderProps = {@as("open") _open: bool, disabled: bool}
   @module("@headlessui/react") @react.component
   external make: (
     @as("as") ~as_: 'asType=?,
@@ -11,7 +11,7 @@ type renderProps = {@as("open") open_: bool, disabled: bool}
   ) => React.element = "Listbox"
 
   module Button = {
-    type renderProps = {@as("open") open_: bool, disabled: bool}
+    type renderProps = {@as("open") _open: bool, disabled: bool}
     @module("@headlessui/react") @react.component @scope("Listbox")
     external make: (
       @as("as") ~as_: 'asType=?,
@@ -21,7 +21,7 @@ type renderProps = {@as("open") open_: bool, disabled: bool}
   }
 
   module Label = {
-    type renderProps = {@as("open") open_: bool, disabled: bool}
+    type renderProps = {@as("open") _open: bool, disabled: bool}
     @module("@headlessui/react") @react.component @scope("Listbox")
     external make: (
       @as("as") ~as_: 'asType=?,
@@ -31,7 +31,7 @@ type renderProps = {@as("open") open_: bool, disabled: bool}
   }
 
   module Options = {
-    type renderProps = {@as("open") open_: bool}
+    type renderProps = {@as("open") _open: bool}
     @module("@headlessui/react") @react.component @scope("Listbox")
     external make: (
       @as("as") ~as_: 'asType=?,

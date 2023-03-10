@@ -1,7 +1,7 @@
-type renderProps = {@as("open") open_: bool}
+type renderProps = {@as("open") _open: bool}
 @module("@headlessui/react") @react.component
 external make: (
-  @as("open") @as("open") ~open_: bool=?,
+  @as("open") @as("open") ~_open: bool=?,
   ~onClose: unit => unit=?,
   ~initialFocus: React.ref<React.element>=?,
   @as("as") ~as_: 'asType=?,
@@ -12,7 +12,7 @@ external make: (
 ) => React.element = "Dialog"
 
 module Overlay = {
-  type renderProps = {@as("open") open_: bool}
+  type renderProps = {@as("open") _open: bool}
   @module("@headlessui/react") @react.component @scope("Dialog")
   external make: (
     @as("as") ~as_: 'asType=?,
@@ -22,7 +22,7 @@ module Overlay = {
 }
 
 module Title = {
-  type renderProps = {@as("open") open_: bool}
+  type renderProps = {@as("open") _open: bool}
   @module("@headlessui/react") @react.component @scope("Dialog")
   external make: (
     @as("as") ~as_: 'asType=?,
@@ -32,7 +32,7 @@ module Title = {
 }
 
 module Description = {
-  type renderProps = {@as("open") open_: bool}
+  type renderProps = {@as("open") _open: bool}
   @module("@headlessui/react") @react.component @scope("Dialog")
   external make: (
     @as("as") ~as_: 'asType=?,
