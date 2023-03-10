@@ -1,7 +1,7 @@
 type renderProps = {@as("open") _open: bool}
   @module("@headlessui/react") @react.component
   external make: (
-    ~_as: 'asType=?,
+    @as("as") ~as_: 'asType=?,
     ~className: string=?,
     ~children: renderProps => React.element,
   ) => React.element = "Menu"
@@ -10,7 +10,7 @@ type renderProps = {@as("open") _open: bool}
     type renderProps = {@as("open") _open: bool}
     @module("@headlessui/react") @react.component @scope("Menu")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~className: string=?,
       ~children: renderProps => React.element,
     ) => React.element = "Button"
@@ -20,7 +20,7 @@ type renderProps = {@as("open") _open: bool}
     type renderProps = {@as("open") _open: bool}
     @module("@headlessui/react") @react.component @scope("Menu")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~static: bool=?,
       ~unmount: bool=?,
       ~className: string=?,
@@ -32,7 +32,7 @@ type renderProps = {@as("open") _open: bool}
     type renderProps = {@as("open") _open: bool, active: bool}
     @module("@headlessui/react") @react.component @scope("Menu")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~disabled: bool=?,
       ~active: bool=?,
       ~className: string=?,

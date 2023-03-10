@@ -1,6 +1,6 @@
 @module("@headlessui/react") @react.component
   external make: (
-    ~_as: 'asType=?,
+    @as("as") ~as_: 'asType=?,
     ~show: bool=?,
     ~appear: bool=?,
     ~unmount: bool=?,
@@ -22,7 +22,7 @@
   module Child = {
     @module("@headlessui/react") @react.component @scope("Transition")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~appear: bool=?,
       ~unmount: bool=?,
       ~enter: string=?,

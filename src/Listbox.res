@@ -1,7 +1,7 @@
 type renderProps = {@as("open") _open: bool, disabled: bool}
   @module("@headlessui/react") @react.component
   external make: (
-    ~_as: 'asType=?,
+    @as("as") ~as_: 'asType=?,
     ~disabled: bool=?,
     ~value: 'value=?,
     ~onChange: 'value => unit=?,
@@ -14,7 +14,7 @@ type renderProps = {@as("open") _open: bool, disabled: bool}
     type renderProps = {@as("open") _open: bool, disabled: bool}
     @module("@headlessui/react") @react.component @scope("Listbox")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~className: string=?,
       ~children: renderProps => React.element,
     ) => React.element = "Button"
@@ -24,7 +24,7 @@ type renderProps = {@as("open") _open: bool, disabled: bool}
     type renderProps = {@as("open") _open: bool, disabled: bool}
     @module("@headlessui/react") @react.component @scope("Listbox")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~className: string=?,
       ~children: renderProps => React.element,
     ) => React.element = "Label"
@@ -34,7 +34,7 @@ type renderProps = {@as("open") _open: bool, disabled: bool}
     type renderProps = {@as("open") _open: bool}
     @module("@headlessui/react") @react.component @scope("Listbox")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~static: bool=?,
       ~unmount: bool=?,
       ~className: string=?,
@@ -46,7 +46,7 @@ type renderProps = {@as("open") _open: bool, disabled: bool}
     type renderProps = {active: bool, selected: bool, disabled: bool}
     @module("@headlessui/react") @react.component @scope("Listbox")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~value: 'value=?,
       ~disabled: bool=?,
       ~className: string=?,

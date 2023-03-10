@@ -1,7 +1,7 @@
 type renderProps = {@as("open") _open: bool, close: bool}
   @module("@headlessui/react") @react.component
   external make: (
-    ~_as: 'asType=?,
+    @as("as") ~as_: 'asType=?,
     ~className: string=?,
     ~children: renderProps => React.element,
   ) => React.element = "Popover"
@@ -10,7 +10,7 @@ type renderProps = {@as("open") _open: bool, close: bool}
     type renderProps = {@as("open") _open: bool}
     @module("@headlessui/react") @react.component @scope("Popover")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~className: string=?,
       ~children: renderProps => React.element,
     ) => React.element = "Overlay"
@@ -20,7 +20,7 @@ type renderProps = {@as("open") _open: bool, close: bool}
     type renderProps = {@as("open") _open: bool}
     @module("@headlessui/react") @react.component @scope("Popover")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~className: string=?,
       ~children: renderProps => React.element,
     ) => React.element = "Button"
@@ -30,7 +30,7 @@ type renderProps = {@as("open") _open: bool, close: bool}
     type renderProps = {@as("open") _open: bool, close: bool}
     @module("@headlessui/react") @react.component @scope("Popover")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~focus: bool=?,
       ~static: bool=?,
       ~unmount: bool=?,
@@ -41,6 +41,6 @@ type renderProps = {@as("open") _open: bool, close: bool}
 
   module Group = {
     @module("@headlessui/react") @react.component @scope("Popover")
-    external make: (~_as: 'asType=?, ~className: string=?, ~children: 'children) => React.element =
+    external make: (@as("as") ~as_: 'asType=?, ~className: string=?, ~children: 'children) => React.element =
       "Group"
   }

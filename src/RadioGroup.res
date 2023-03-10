@@ -1,6 +1,6 @@
 @module("@headlessui/react") @react.component
   external make: (
-    ~_as: 'asType=?,
+    @as("as") ~as_: 'asType=?,
     ~value: 'value=?,
     ~onChange: 'value => unit=?,
     ~disabled: bool=?,
@@ -12,7 +12,7 @@
     type renderProps = {active: bool, checked: bool, disabled: bool}
     @module("@headlessui/react") @react.component @scope("RadioGroup")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~value: 'value=?,
       ~disabled: bool=?,
       ~className: string=?,
@@ -22,12 +22,12 @@
 
   module Label = {
     @module("@headlessui/react") @react.component @scope("RadioGroup")
-    external make: (~_as: 'asType=?, ~className: string=?, ~children: 'children) => React.element =
+    external make: (@as("as") ~as_: 'asType=?, ~className: string=?, ~children: 'children) => React.element =
       "Label"
   }
 
   module Description = {
     @module("@headlessui/react") @react.component @scope("RadioGroup")
-    external make: (~_as: 'asType=?, ~className: string=?, ~children: 'children) => React.element =
+    external make: (@as("as") ~as_: 'asType=?, ~className: string=?, ~children: 'children) => React.element =
       "Description"
   }

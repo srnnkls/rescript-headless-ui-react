@@ -1,7 +1,7 @@
 type renderProps = {selected: bool}
   @module("@headlessui/react") @react.component
   external make: (
-    ~_as: 'asType=?,
+    @as("as") ~as_: 'asType=?,
     ~className: string=?,
     ~children: renderProps => React.element,
   ) => React.element = "Tab"
@@ -10,7 +10,7 @@ type renderProps = {selected: bool}
     type renderProps = {selectedIndex: int}
     @module("@headlessui/react") @react.component @scope("Tab")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~defaultIndex: int=?,
       ~onChange: int => unit=?,
       ~vertical: bool=?,
@@ -24,7 +24,7 @@ type renderProps = {selected: bool}
     type renderProps = {selectedIndex: bool}
     @module("@headlessui/react") @react.component @scope("Tab")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~className: string=?,
       ~children: renderProps => React.element,
     ) => React.element = "List"
@@ -34,7 +34,7 @@ type renderProps = {selected: bool}
     type renderProps = {selectedIndex: bool}
     @module("@headlessui/react") @react.component @scope("Tab")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~className: string=?,
       ~children: renderProps => React.element,
     ) => React.element = "Panels"
@@ -44,7 +44,7 @@ type renderProps = {selected: bool}
     type renderProps = {selected: bool}
     @module("@headlessui/react") @react.component @scope("Tab")
     external make: (
-      ~_as: 'asType=?,
+      @as("as") ~as_: 'asType=?,
       ~className: string=?,
       ~children: renderProps => React.element,
     ) => React.element = "Panel"
