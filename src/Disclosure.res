@@ -1,4 +1,4 @@
-type renderProps = {@as("open") _open: bool, close: bool}
+type renderProps = {@as("open") open_: bool, close: bool}
   @module("@headlessui/react") @react.component
   external make: (
     @as("as") ~as_: 'asType=?,
@@ -8,7 +8,7 @@ type renderProps = {@as("open") _open: bool, close: bool}
   ) => React.element = "Disclosure"
 
   module Button = {
-    type renderProps = {@as("open") _open: bool}
+    type renderProps = {@as("open") open_: bool}
     @module("@headlessui/react") @react.component @scope("Disclosure")
     external make: (
       @as("as") ~as_: 'asType=?,
@@ -18,7 +18,7 @@ type renderProps = {@as("open") _open: bool, close: bool}
   }
 
   module Panel = {
-    type renderProps = {@as("open") _open: bool, close: bool}
+    type renderProps = {@as("open") open_: bool, close: bool}
     @module("@headlessui/react") @react.component @scope("Disclosure")
     external make: (
       @as("as") ~as_: 'asType=?,

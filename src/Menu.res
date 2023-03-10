@@ -1,4 +1,4 @@
-type renderProps = {@as("open") _open: bool}
+type renderProps = {@as("open") open_: bool}
   @module("@headlessui/react") @react.component
   external make: (
     @as("as") ~as_: 'asType=?,
@@ -7,7 +7,7 @@ type renderProps = {@as("open") _open: bool}
   ) => React.element = "Menu"
 
   module Button = {
-    type renderProps = {@as("open") _open: bool}
+    type renderProps = {@as("open") open_: bool}
     @module("@headlessui/react") @react.component @scope("Menu")
     external make: (
       @as("as") ~as_: 'asType=?,
@@ -17,7 +17,7 @@ type renderProps = {@as("open") _open: bool}
   }
 
   module Items = {
-    type renderProps = {@as("open") _open: bool}
+    type renderProps = {@as("open") open_: bool}
     @module("@headlessui/react") @react.component @scope("Menu")
     external make: (
       @as("as") ~as_: 'asType=?,
@@ -29,7 +29,7 @@ type renderProps = {@as("open") _open: bool}
   }
 
   module Item = {
-    type renderProps = {@as("open") _open: bool, active: bool}
+    type renderProps = {@as("open") open_: bool, active: bool}
     @module("@headlessui/react") @react.component @scope("Menu")
     external make: (
       @as("as") ~as_: 'asType=?,
