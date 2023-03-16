@@ -49,7 +49,7 @@ type renderProps = {@as("open") _open: bool, disabled: bool}
       @as("as") ~as_: 'asType=?,
       ~value: 'value=?,
       ~disabled: bool=?,
-      ~className: string=?,
+      ~className: renderProps => string=?,
       ~children: renderProps => React.element,
     ) => React.element = "Option"
   }
